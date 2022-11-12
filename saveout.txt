@@ -1,0 +1,717 @@
+pod_findFree 0
+REG: reserved cores 2 mem 8
+ExclusiveList  count 2   memory 8
+	start on numa 0
+	l3 0 free mem 64 ask 8
+	found idle numa=0 l3=0 core=0
+	m = 16
+	done
+	rm_applyReserved 0 0
+	rm_applyReserved 1 1
+ExclusiveList  count 4   memory 16
+	start on numa 1
+	l3 0 free mem 64 ask 16
+	found idle numa=1 l3=0 core=0
+	m = 16
+	done
+ExclusiveList  count 4   memory 16
+	start on numa 0
+	l3 0 free mem 56 ask 16
+	found idle numa=0 l3=0 core=2
+	m = 14
+	done
+REG: exclusive cores 4 mem 8
+pod_findFree 1
+ExclusiveList  count 4   memory 8
+	start on numa 1
+	l3 0 free mem 48 ask 8
+	found idle numa=1 l3=0 core=4
+	m = 12
+	done
+	rm_applyReserved 0 68
+	rm_applyReserved 1 69
+	rm_applyReserved 2 70
+	rm_applyReserved 3 71
+REQ: cores 20
+  rejected coreAsk 20 > 16 coreMaxPerL3
+REG: exclusive cores 9 mem 16
+pod_findFree 2
+ExclusiveList  count 9   memory 16
+	start on numa 0
+	l3 0 free mem 40 ask 16
+	found idle numa=0 l3=0 core=6
+	m = 10
+	done
+	rm_applyReserved 0 6
+	rm_applyReserved 1 7
+	rm_applyReserved 2 8
+	rm_applyReserved 3 9
+	rm_applyReserved 4 10
+	rm_applyReserved 5 11
+	rm_applyReserved 6 12
+	rm_applyReserved 7 13
+	rm_applyReserved 8 14
+REG: exclusive cores 7 mem 14
+pod_findFree 3
+ExclusiveList  count 7   memory 14
+	start on numa 1
+	l3 0 free mem 40 ask 14
+	found idle numa=1 l3=0 core=8
+	m = 8
+	done
+	rm_applyReserved 0 72
+	rm_applyReserved 1 73
+	rm_applyReserved 2 74
+	rm_applyReserved 3 75
+	rm_applyReserved 4 76
+	rm_applyReserved 5 77
+	rm_applyReserved 6 78
+REG: exclusive cores 3 mem 10
+pod_findFree 4
+ExclusiveList  count 3   memory 10
+	start on numa 0
+	l3 0 free mem 24 ask 10
+	l3 1 free mem 64 ask 10
+	found idle numa=0 l3=1 core=0
+	m = 16
+	done
+	rm_applyReserved 0 16
+	rm_applyReserved 1 17
+	rm_applyReserved 2 18
+REG: exclusive cores 2 mem 8
+pod_findFree 5
+ExclusiveList  count 2   memory 8
+	start on numa 1
+	l3 0 free mem 26 ask 8
+	l3 1 free mem 64 ask 8
+	found idle numa=1 l3=1 core=0
+	m = 16
+	done
+	rm_applyReserved 0 80
+	rm_applyReserved 1 81
+REG: exclusive cores 1 mem 4
+pod_findFree 6
+ExclusiveList  count 1   memory 4
+	start on numa 0
+	l3 0 free mem 24 ask 4
+	found idle numa=0 l3=0 core=15
+	m = 1
+	done
+	rm_applyReserved 0 15
+REG: exclusive cores 4 mem 10
+pod_findFree 7
+ExclusiveList  count 4   memory 10
+	start on numa 1
+	l3 0 free mem 26 ask 10
+	l3 1 free mem 56 ask 10
+	found idle numa=1 l3=1 core=2
+	m = 14
+	done
+	rm_applyReserved 0 82
+	rm_applyReserved 1 83
+	rm_applyReserved 2 84
+	rm_applyReserved 3 85
+REG: exclusive cores 14 mem 16
+pod_findFree 8
+ExclusiveList  count 14   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 54 ask 16
+	l3 2 free mem 64 ask 16
+	found idle numa=0 l3=2 core=0
+	m = 16
+	done
+	rm_applyReserved 0 32
+	rm_applyReserved 1 33
+	rm_applyReserved 2 34
+	rm_applyReserved 3 35
+	rm_applyReserved 4 36
+	rm_applyReserved 5 37
+	rm_applyReserved 6 38
+	rm_applyReserved 7 39
+	rm_applyReserved 8 40
+	rm_applyReserved 9 41
+	rm_applyReserved 10 42
+	rm_applyReserved 11 43
+	rm_applyReserved 12 44
+	rm_applyReserved 13 45
+REG: exclusive cores 4 mem 8
+pod_findFree 9
+ExclusiveList  count 4   memory 8
+	start on numa 1
+	l3 0 free mem 26 ask 8
+	l3 1 free mem 46 ask 8
+	found idle numa=1 l3=1 core=6
+	m = 10
+	done
+	rm_applyReserved 0 86
+	rm_applyReserved 1 87
+	rm_applyReserved 2 88
+	rm_applyReserved 3 89
+REG: exclusive cores 8 mem 16
+pod_findFree 10
+ExclusiveList  count 8   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 54 ask 16
+	found idle numa=0 l3=1 core=3
+	m = 13
+	done
+	rm_applyReserved 0 19
+	rm_applyReserved 1 20
+	rm_applyReserved 2 21
+	rm_applyReserved 3 22
+	rm_applyReserved 4 23
+	rm_applyReserved 5 24
+	rm_applyReserved 6 25
+	rm_applyReserved 7 26
+REG: exclusive cores 9 mem 20
+pod_findFree 11
+ExclusiveList  count 9   memory 20
+	start on numa 1
+	l3 0 free mem 26 ask 20
+	l3 1 free mem 38 ask 20
+	l3 2 free mem 64 ask 20
+	found idle numa=1 l3=2 core=0
+	m = 16
+	done
+	rm_applyReserved 0 96
+	rm_applyReserved 1 97
+	rm_applyReserved 2 98
+	rm_applyReserved 3 99
+	rm_applyReserved 4 100
+	rm_applyReserved 5 101
+	rm_applyReserved 6 102
+	rm_applyReserved 7 103
+	rm_applyReserved 8 104
+REG: exclusive cores 3 mem 16
+pod_findFree 12
+ExclusiveList  count 3   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 38 ask 16
+	found idle numa=0 l3=1 core=11
+	m = 5
+	done
+	rm_applyReserved 0 27
+	rm_applyReserved 1 28
+	rm_applyReserved 2 29
+REG: exclusive cores 4 mem 16
+pod_findFree 13
+ExclusiveList  count 4   memory 16
+	start on numa 1
+	l3 0 free mem 26 ask 16
+	l3 1 free mem 38 ask 16
+	found idle numa=1 l3=1 core=10
+	m = 6
+	done
+	rm_applyReserved 0 90
+	rm_applyReserved 1 91
+	rm_applyReserved 2 92
+	rm_applyReserved 3 93
+REG: exclusive cores 5 mem 16
+pod_findFree 14
+ExclusiveList  count 5   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 22 ask 16
+	l3 2 free mem 48 ask 16
+	l3 3 free mem 64 ask 16
+	found idle numa=0 l3=3 core=0
+	m = 16
+	done
+	rm_applyReserved 0 48
+	rm_applyReserved 1 49
+	rm_applyReserved 2 50
+	rm_applyReserved 3 51
+	rm_applyReserved 4 52
+REG: exclusive cores 6 mem 16
+pod_findFree 15
+ExclusiveList  count 6   memory 16
+	start on numa 1
+	l3 0 free mem 26 ask 16
+	l3 1 free mem 22 ask 16
+	l3 2 free mem 44 ask 16
+	found idle numa=1 l3=2 core=9
+	m = 7
+	done
+	rm_applyReserved 0 105
+	rm_applyReserved 1 106
+	rm_applyReserved 2 107
+	rm_applyReserved 3 108
+	rm_applyReserved 4 109
+	rm_applyReserved 5 110
+REG: exclusive cores 7 mem 16
+pod_findFree 16
+ExclusiveList  count 7   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 22 ask 16
+	l3 2 free mem 48 ask 16
+	l3 3 free mem 48 ask 16
+	found idle numa=0 l3=3 core=5
+	m = 11
+	done
+	rm_applyReserved 0 53
+	rm_applyReserved 1 54
+	rm_applyReserved 2 55
+	rm_applyReserved 3 56
+	rm_applyReserved 4 57
+	rm_applyReserved 5 58
+	rm_applyReserved 6 59
+REG: exclusive cores 2 mem 8
+pod_findFree 17
+ExclusiveList  count 2   memory 8
+	start on numa 1
+	l3 0 free mem 26 ask 8
+	l3 1 free mem 22 ask 8
+	found idle numa=1 l3=1 core=14
+	m = 2
+	done
+	rm_applyReserved 0 94
+	rm_applyReserved 1 95
+REG: exclusive cores 2 mem 8
+pod_findFree 18
+ExclusiveList  count 2   memory 8
+	start on numa 0
+	l3 0 free mem 20 ask 8
+	l3 1 free mem 22 ask 8
+	found idle numa=0 l3=1 core=14
+	m = 2
+	done
+	rm_applyReserved 0 30
+	rm_applyReserved 1 31
+REG: exclusive cores 2 mem 8
+pod_findFree 19
+ExclusiveList  count 2   memory 8
+	start on numa 1
+	l3 0 free mem 26 ask 8
+	l3 1 free mem 14 ask 8
+	l3 2 free mem 28 ask 8
+	l3 3 free mem 64 ask 8
+	found idle numa=1 l3=3 core=0
+	m = 16
+	done
+	rm_applyReserved 0 112
+	rm_applyReserved 1 113
+REG: exclusive cores 8 mem 4
+pod_findFree 20
+ExclusiveList  count 8   memory 4
+	start on numa 0
+	l3 0 free mem 20 ask 4
+	l3 1 free mem 14 ask 4
+	l3 2 free mem 48 ask 4
+	l3 3 free mem 32 ask 4
+	start on numa 1
+	l3 0 free mem 26 ask 4
+	l3 1 free mem 14 ask 4
+	l3 2 free mem 28 ask 4
+	l3 3 free mem 56 ask 4
+	found idle numa=1 l3=3 core=2
+	m = 14
+	done
+	rm_applyReserved 0 114
+	rm_applyReserved 1 115
+	rm_applyReserved 2 116
+	rm_applyReserved 3 117
+	rm_applyReserved 4 118
+	rm_applyReserved 5 119
+	rm_applyReserved 6 120
+	rm_applyReserved 7 121
+REG: exclusive cores 8 mem 16
+pod_findFree 21
+ExclusiveList  count 8   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 14 ask 16
+	l3 2 free mem 48 ask 16
+	l3 3 free mem 32 ask 16
+	start on numa 1
+	l3 0 free mem 26 ask 16
+	l3 1 free mem 14 ask 16
+	l3 2 free mem 28 ask 16
+	l3 3 free mem 52 ask 16
+	rejected
+REG: exclusive cores 8 mem 16
+pod_findFree 21
+ExclusiveList  count 8   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 14 ask 16
+	l3 2 free mem 48 ask 16
+	l3 3 free mem 32 ask 16
+	start on numa 1
+	l3 0 free mem 26 ask 16
+	l3 1 free mem 14 ask 16
+	l3 2 free mem 28 ask 16
+	l3 3 free mem 52 ask 16
+	rejected
+REG: exclusive cores 8 mem 16
+pod_findFree 21
+ExclusiveList  count 8   memory 16
+	start on numa 0
+	l3 0 free mem 20 ask 16
+	l3 1 free mem 14 ask 16
+	l3 2 free mem 48 ask 16
+	l3 3 free mem 32 ask 16
+	start on numa 1
+	l3 0 free mem 26 ask 16
+	l3 1 free mem 14 ask 16
+	l3 2 free mem 28 ask 16
+	l3 3 free mem 52 ask 16
+	rejected
+REL:
+	POD found type 2
+releaseExclusive: POD 8  cores 14
+	core 32
+	core 33
+	core 34
+	core 35
+	core 36
+	core 37
+	core 38
+	core 39
+	core 40
+	core 41
+	core 42
+	core 43
+	core 44
+	core 45
+REG: exclusive cores 7 mem 8
+pod_findFree 8
+ExclusiveList  count 7   memory 8
+	start on numa 0
+	l3 0 free mem 20 ask 8
+	l3 1 free mem 14 ask 8
+	l3 2 free mem 64 ask 8
+	found idle numa=0 l3=2 core=0
+	m = 16
+	done
+	rm_applyReserved 0 32
+	rm_applyReserved 1 33
+	rm_applyReserved 2 34
+	rm_applyReserved 3 35
+	rm_applyReserved 4 36
+	rm_applyReserved 5 37
+	rm_applyReserved 6 38
+REG: exclusive cores 7 mem 8
+pod_findFree 21
+ExclusiveList  count 7   memory 8
+	start on numa 1
+	l3 0 free mem 26 ask 8
+	l3 1 free mem 14 ask 8
+	l3 2 free mem 28 ask 8
+	l3 3 free mem 52 ask 8
+	start on numa 0
+	l3 0 free mem 20 ask 8
+	l3 1 free mem 14 ask 8
+	l3 2 free mem 56 ask 8
+	found idle numa=0 l3=2 core=7
+	m = 9
+	done
+	rm_applyReserved 0 39
+	rm_applyReserved 1 40
+	rm_applyReserved 2 41
+	rm_applyReserved 3 42
+	rm_applyReserved 4 43
+	rm_applyReserved 5 44
+	rm_applyReserved 6 45
+REQ: cores 50 share
+  less than 1 core
+	pool 0 enough memory
+	pool 0 enough core credits
+pod_findFree 22
+REQ: cores 150 share
+  more than 1 core
+	pool 0 enough memory
+	pool 0 enough core credits
+pod_findFree 23
+REL:
+	POD found type 3
+System: Nuna=2  l3Groups=8 cores=128
+	Numa_0: 4/64 
+		l3Group_0: 4, memInUse=44 idle=0 res=2
+			core_0: 0  sibling 1  state RESERVED
+			core_1: 1  sibling 0  state RESERVED
+			core_2: 2  sibling 3  state SHARED  sharedPool 1
+			core_3: 3  sibling 2  state SHARED  sharedPool 1
+			core_4: 4  sibling 5  state SHARED  sharedPool 1
+			core_5: 5  sibling 4  state SHARED  sharedPool 1
+			core_6: 6  sibling 7  state EXCLUSIVE  pod 2
+			core_7: 7  sibling 6  state EXCLUSIVE  pod 2
+			core_8: 8  sibling 9  state EXCLUSIVE  pod 2
+			core_9: 9  sibling 8  state EXCLUSIVE  pod 2
+			core_10: 10  sibling 11  state EXCLUSIVE  pod 2
+			core_11: 11  sibling 10  state EXCLUSIVE  pod 2
+			core_12: 12  sibling 13  state EXCLUSIVE  pod 2
+			core_13: 13  sibling 12  state EXCLUSIVE  pod 2
+			core_14: 14  sibling 15  state EXCLUSIVE  pod 2
+			core_15: 15  sibling 14  state EXCLUSIVE  pod 6
+		l3Group_1: 4, memInUse=50 idle=0 res=0
+			core_16: 0  sibling 1  state EXCLUSIVE  pod 4
+			core_17: 1  sibling 0  state EXCLUSIVE  pod 4
+			core_18: 2  sibling 3  state EXCLUSIVE  pod 4
+			core_19: 3  sibling 2  state EXCLUSIVE  pod 10
+			core_20: 4  sibling 5  state EXCLUSIVE  pod 10
+			core_21: 5  sibling 4  state EXCLUSIVE  pod 10
+			core_22: 6  sibling 7  state EXCLUSIVE  pod 10
+			core_23: 7  sibling 6  state EXCLUSIVE  pod 10
+			core_24: 8  sibling 9  state EXCLUSIVE  pod 10
+			core_25: 9  sibling 8  state EXCLUSIVE  pod 10
+			core_26: 10  sibling 11  state EXCLUSIVE  pod 10
+			core_27: 11  sibling 10  state EXCLUSIVE  pod 12
+			core_28: 12  sibling 13  state EXCLUSIVE  pod 12
+			core_29: 13  sibling 12  state EXCLUSIVE  pod 12
+			core_30: 14  sibling 15  state EXCLUSIVE  pod 18
+			core_31: 15  sibling 14  state EXCLUSIVE  pod 18
+		l3Group_2: 4, memInUse=16 idle=2 res=0
+			core_32: 0  sibling 1  state EXCLUSIVE  pod 8
+			core_33: 1  sibling 0  state EXCLUSIVE  pod 8
+			core_34: 2  sibling 3  state EXCLUSIVE  pod 8
+			core_35: 3  sibling 2  state EXCLUSIVE  pod 8
+			core_36: 4  sibling 5  state EXCLUSIVE  pod 8
+			core_37: 5  sibling 4  state EXCLUSIVE  pod 8
+			core_38: 6  sibling 7  state EXCLUSIVE  pod 8
+			core_39: 7  sibling 6  state EXCLUSIVE  pod 21
+			core_40: 8  sibling 9  state EXCLUSIVE  pod 21
+			core_41: 9  sibling 8  state EXCLUSIVE  pod 21
+			core_42: 10  sibling 11  state EXCLUSIVE  pod 21
+			core_43: 11  sibling 10  state EXCLUSIVE  pod 21
+			core_44: 12  sibling 13  state EXCLUSIVE  pod 21
+			core_45: 13  sibling 12  state EXCLUSIVE  pod 21
+			core_46: 14  sibling 15  state IDLE 
+			core_47: 15  sibling 14  state IDLE 
+		l3Group_3: 4, memInUse=32 idle=4 res=0
+			core_48: 0  sibling 1  state EXCLUSIVE  pod 14
+			core_49: 1  sibling 0  state EXCLUSIVE  pod 14
+			core_50: 2  sibling 3  state EXCLUSIVE  pod 14
+			core_51: 3  sibling 2  state EXCLUSIVE  pod 14
+			core_52: 4  sibling 5  state EXCLUSIVE  pod 14
+			core_53: 5  sibling 4  state EXCLUSIVE  pod 16
+			core_54: 6  sibling 7  state EXCLUSIVE  pod 16
+			core_55: 7  sibling 6  state EXCLUSIVE  pod 16
+			core_56: 8  sibling 9  state EXCLUSIVE  pod 16
+			core_57: 9  sibling 8  state EXCLUSIVE  pod 16
+			core_58: 10  sibling 11  state EXCLUSIVE  pod 16
+			core_59: 11  sibling 10  state EXCLUSIVE  pod 16
+			core_60: 12  sibling 13  state IDLE 
+			core_61: 13  sibling 12  state IDLE 
+			core_62: 14  sibling 15  state IDLE 
+			core_63: 15  sibling 14  state IDLE 
+	Numa_1: 4/64 
+		l3Group_0: 4, memInUse=38 idle=1 res=0
+			core_64: 0  sibling 1  state SHARED  sharedPool 0
+			core_65: 1  sibling 0  state SHARED  sharedPool 0
+			core_66: 2  sibling 3  state SHARED  sharedPool 0
+			core_67: 3  sibling 2  state SHARED  sharedPool 0
+			core_68: 4  sibling 5  state EXCLUSIVE  pod 1
+			core_69: 5  sibling 4  state EXCLUSIVE  pod 1
+			core_70: 6  sibling 7  state EXCLUSIVE  pod 1
+			core_71: 7  sibling 6  state EXCLUSIVE  pod 1
+			core_72: 8  sibling 9  state EXCLUSIVE  pod 3
+			core_73: 9  sibling 8  state EXCLUSIVE  pod 3
+			core_74: 10  sibling 11  state EXCLUSIVE  pod 3
+			core_75: 11  sibling 10  state EXCLUSIVE  pod 3
+			core_76: 12  sibling 13  state EXCLUSIVE  pod 3
+			core_77: 13  sibling 12  state EXCLUSIVE  pod 3
+			core_78: 14  sibling 15  state EXCLUSIVE  pod 3
+			core_79: 15  sibling 14  state IDLE 
+		l3Group_1: 4, memInUse=50 idle=0 res=0
+			core_80: 0  sibling 1  state EXCLUSIVE  pod 5
+			core_81: 1  sibling 0  state EXCLUSIVE  pod 5
+			core_82: 2  sibling 3  state EXCLUSIVE  pod 7
+			core_83: 3  sibling 2  state EXCLUSIVE  pod 7
+			core_84: 4  sibling 5  state EXCLUSIVE  pod 7
+			core_85: 5  sibling 4  state EXCLUSIVE  pod 7
+			core_86: 6  sibling 7  state EXCLUSIVE  pod 9
+			core_87: 7  sibling 6  state EXCLUSIVE  pod 9
+			core_88: 8  sibling 9  state EXCLUSIVE  pod 9
+			core_89: 9  sibling 8  state EXCLUSIVE  pod 9
+			core_90: 10  sibling 11  state EXCLUSIVE  pod 13
+			core_91: 11  sibling 10  state EXCLUSIVE  pod 13
+			core_92: 12  sibling 13  state EXCLUSIVE  pod 13
+			core_93: 13  sibling 12  state EXCLUSIVE  pod 13
+			core_94: 14  sibling 15  state EXCLUSIVE  pod 17
+			core_95: 15  sibling 14  state EXCLUSIVE  pod 17
+		l3Group_2: 4, memInUse=36 idle=1 res=0
+			core_96: 0  sibling 1  state EXCLUSIVE  pod 11
+			core_97: 1  sibling 0  state EXCLUSIVE  pod 11
+			core_98: 2  sibling 3  state EXCLUSIVE  pod 11
+			core_99: 3  sibling 2  state EXCLUSIVE  pod 11
+			core_100: 4  sibling 5  state EXCLUSIVE  pod 11
+			core_101: 5  sibling 4  state EXCLUSIVE  pod 11
+			core_102: 6  sibling 7  state EXCLUSIVE  pod 11
+			core_103: 7  sibling 6  state EXCLUSIVE  pod 11
+			core_104: 8  sibling 9  state EXCLUSIVE  pod 11
+			core_105: 9  sibling 8  state EXCLUSIVE  pod 15
+			core_106: 10  sibling 11  state EXCLUSIVE  pod 15
+			core_107: 11  sibling 10  state EXCLUSIVE  pod 15
+			core_108: 12  sibling 13  state EXCLUSIVE  pod 15
+			core_109: 13  sibling 12  state EXCLUSIVE  pod 15
+			core_110: 14  sibling 15  state EXCLUSIVE  pod 15
+			core_111: 15  sibling 14  state IDLE 
+		l3Group_3: 4, memInUse=12 idle=6 res=0
+			core_112: 0  sibling 1  state EXCLUSIVE  pod 19
+			core_113: 1  sibling 0  state EXCLUSIVE  pod 19
+			core_114: 2  sibling 3  state EXCLUSIVE  pod 20
+			core_115: 3  sibling 2  state EXCLUSIVE  pod 20
+			core_116: 4  sibling 5  state EXCLUSIVE  pod 20
+			core_117: 5  sibling 4  state EXCLUSIVE  pod 20
+			core_118: 6  sibling 7  state EXCLUSIVE  pod 20
+			core_119: 7  sibling 6  state EXCLUSIVE  pod 20
+			core_120: 8  sibling 9  state EXCLUSIVE  pod 20
+			core_121: 9  sibling 8  state EXCLUSIVE  pod 20
+			core_122: 10  sibling 11  state IDLE 
+			core_123: 11  sibling 10  state IDLE 
+			core_124: 12  sibling 13  state IDLE 
+			core_125: 13  sibling 12  state IDLE 
+			core_126: 14  sibling 15  state IDLE 
+			core_127: 15  sibling 14  state IDLE 
+
+
+POD_0 state=1 type=1 memory=8
+	sharedPool 0 
+POD_1 state=1 type=2 memory=8
+	0  core 68:4:1, state 2
+	1  core 69:4:1, state 2
+	2  core 70:4:1, state 2
+	3  core 71:4:1, state 2
+POD_2 state=1 type=2 memory=16
+	0  core 6:0:0, state 2
+	1  core 7:0:0, state 2
+	2  core 8:0:0, state 2
+	3  core 9:0:0, state 2
+	4  core 10:0:0, state 2
+	5  core 11:0:0, state 2
+	6  core 12:0:0, state 2
+	7  core 13:0:0, state 2
+	8  core 14:0:0, state 2
+POD_3 state=1 type=2 memory=14
+	0  core 72:4:1, state 2
+	1  core 73:4:1, state 2
+	2  core 74:4:1, state 2
+	3  core 75:4:1, state 2
+	4  core 76:4:1, state 2
+	5  core 77:4:1, state 2
+	6  core 78:4:1, state 2
+POD_4 state=1 type=2 memory=10
+	0  core 16:1:0, state 2
+	1  core 17:1:0, state 2
+	2  core 18:1:0, state 2
+POD_5 state=1 type=2 memory=8
+	0  core 80:5:1, state 2
+	1  core 81:5:1, state 2
+POD_6 state=1 type=2 memory=4
+	0  core 15:0:0, state 2
+POD_7 state=1 type=2 memory=10
+	0  core 82:5:1, state 2
+	1  core 83:5:1, state 2
+	2  core 84:5:1, state 2
+	3  core 85:5:1, state 2
+POD_8 state=1 type=2 memory=8
+	0  core 32:2:0, state 2
+	1  core 33:2:0, state 2
+	2  core 34:2:0, state 2
+	3  core 35:2:0, state 2
+	4  core 36:2:0, state 2
+	5  core 37:2:0, state 2
+	6  core 38:2:0, state 2
+POD_9 state=1 type=2 memory=8
+	0  core 86:5:1, state 2
+	1  core 87:5:1, state 2
+	2  core 88:5:1, state 2
+	3  core 89:5:1, state 2
+POD_10 state=1 type=2 memory=16
+	0  core 19:1:0, state 2
+	1  core 20:1:0, state 2
+	2  core 21:1:0, state 2
+	3  core 22:1:0, state 2
+	4  core 23:1:0, state 2
+	5  core 24:1:0, state 2
+	6  core 25:1:0, state 2
+	7  core 26:1:0, state 2
+POD_11 state=1 type=2 memory=20
+	0  core 96:6:1, state 2
+	1  core 97:6:1, state 2
+	2  core 98:6:1, state 2
+	3  core 99:6:1, state 2
+	4  core 100:6:1, state 2
+	5  core 101:6:1, state 2
+	6  core 102:6:1, state 2
+	7  core 103:6:1, state 2
+	8  core 104:6:1, state 2
+POD_12 state=1 type=2 memory=16
+	0  core 27:1:0, state 2
+	1  core 28:1:0, state 2
+	2  core 29:1:0, state 2
+POD_13 state=1 type=2 memory=16
+	0  core 90:5:1, state 2
+	1  core 91:5:1, state 2
+	2  core 92:5:1, state 2
+	3  core 93:5:1, state 2
+POD_14 state=1 type=2 memory=16
+	0  core 48:3:0, state 2
+	1  core 49:3:0, state 2
+	2  core 50:3:0, state 2
+	3  core 51:3:0, state 2
+	4  core 52:3:0, state 2
+POD_15 state=1 type=2 memory=16
+	0  core 105:6:1, state 2
+	1  core 106:6:1, state 2
+	2  core 107:6:1, state 2
+	3  core 108:6:1, state 2
+	4  core 109:6:1, state 2
+	5  core 110:6:1, state 2
+POD_16 state=1 type=2 memory=16
+	0  core 53:3:0, state 2
+	1  core 54:3:0, state 2
+	2  core 55:3:0, state 2
+	3  core 56:3:0, state 2
+	4  core 57:3:0, state 2
+	5  core 58:3:0, state 2
+	6  core 59:3:0, state 2
+POD_17 state=1 type=2 memory=8
+	0  core 94:5:1, state 2
+	1  core 95:5:1, state 2
+POD_18 state=1 type=2 memory=8
+	0  core 30:1:0, state 2
+	1  core 31:1:0, state 2
+POD_19 state=1 type=2 memory=8
+	0  core 112:7:1, state 2
+	1  core 113:7:1, state 2
+POD_20 state=1 type=2 memory=4
+	0  core 114:7:1, state 2
+	1  core 115:7:1, state 2
+	2  core 116:7:1, state 2
+	3  core 117:7:1, state 2
+	4  core 118:7:1, state 2
+	5  core 119:7:1, state 2
+	6  core 120:7:1, state 2
+	7  core 121:7:1, state 2
+POD_21 state=1 type=2 memory=8
+	0  core 39:2:0, state 2
+	1  core 40:2:0, state 2
+	2  core 41:2:0, state 2
+	3  core 42:2:0, state 2
+	4  core 43:2:0, state 2
+	5  core 44:2:0, state 2
+	6  core 45:2:0, state 2
+POD_23 state=1 type=3 memory=4
+	sharedPool 0 
+
+
+POOL_0 
+	0 core 64
+	1 core 65
+	2 core 66
+	3 core 67
+	--  podRefs 1
+	1 POD 23
+	cores= 400 used= 150   memory= 16  used= 4
+POOL_1 
+	0 core 2
+	1 core 3
+	2 core 4
+	3 core 5
+	--  podRefs 0
+	cores= 400 used= 0   memory= 16  used= 0
